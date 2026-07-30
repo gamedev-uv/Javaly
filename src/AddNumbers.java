@@ -1,8 +1,10 @@
+//WAP in Java to input 2 numbers from the user and display their sum.
+
 import java.util.Scanner;
 
 class AddNumbers
 {
-    public static void main(String args[])
+    public static void main()
     {
         Scanner sc = new Scanner(System.in);
 
