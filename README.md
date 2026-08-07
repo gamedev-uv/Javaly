@@ -21,7 +21,7 @@ Feel free to open up an issue if you are having any problems!
 |  7.      | Input Output             | [Link](#input-output) |
 |  8.      | Triangle Checker         | [Link](#triangle-checker) |
 |  9.      | Multiplication Table     | [Link](#multiplication-table) |
-|  10.     | Temperature Converstion  | [Link](#temperature-conversation) |
+|  10.     | Temperature Conversion   | [Link](#temperature-conversion) |
 |  11.     | Maximimum between 3      | [Link](#maximum-between-3) |
 |  12.     | Factorial                | [Link](#factorial) |
 |  13.     | Fibonacci Sequence       | [Link](#fibonacci-sequence) |
@@ -279,7 +279,7 @@ WAP in Java to display the multiplication table of given number `n`.
 3 * 10 = 30
 ```
 
-### Temperature Conversation
+### Temperature Conversion
 WAP in Java to convert temperature from Celcius to Fahrenheit.
 
 > [!TIP]
