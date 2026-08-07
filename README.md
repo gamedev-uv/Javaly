@@ -10,17 +10,22 @@ Feel free to open up an issue if you are having any problems!
 ---
 
 ## Questions
-| Sl. No. | Question               | Link | 
-|   :-    | :-                     | :-:  | 
-|  1.     | Hello World            | [Link](#hello-world) |
-|  2.     | Add Numbers            | [Link](#add-numbers) |
-|  3.     | Calculate              | [Link](#calculate) |
-|  4.     | Travel Package         | [Link](#travel-package) |
-|  5.     | Odd Even               | [Link](#odd-even) |
-|  6.     | Grade Calculator       | [Link](#grade-calculator) |
-|  7.     | Input Output           | [Link](#input-output) |
-|  8.     | Triangle Checker       | [Link](#triangle-checker) |
-|  9.     | Multiplication Table   | [Link](#multiplication-table) |
+| Sl. No.  | Question                 | Link | 
+|   :-     | :-                       | :-:  | 
+|  1.      | Hello World              | [Link](#hello-world) |
+|  2.      | Add Numbers              | [Link](#add-numbers) |
+|  3.      | Calculate                | [Link](#calculate) |
+|  4.      | Travel Package           | [Link](#travel-package) |
+|  5.      | Odd Even                 | [Link](#odd-even) |
+|  6.      | Grade Calculator         | [Link](#grade-calculator) |
+|  7.      | Input Output             | [Link](#input-output) |
+|  8.      | Triangle Checker         | [Link](#triangle-checker) |
+|  9.      | Multiplication Table     | [Link](#multiplication-table) |
+|  10.     | Temperature Converstion  | [Link](#temperature-conversation) |
+|  11.     | Maximimum between 3      | [Link](#maximum-between-3) |
+|  12.     | Factorial                | [Link](#factorial) |
+|  13.     | Fibonacci Sequence       | [Link](#fibonacci-sequence) |
+|  14.     | Swap Numbers             | [Link](#swap-numbers) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -273,6 +278,113 @@ WAP in Java to display the multiplication table of given number `n`.
 3 * 9 = 27
 3 * 10 = 30
 ```
+
+### Temperature Conversation
+WAP in Java to convert temperature from Celcius to Fahrenheit.
+
+> [!TIP]
+> You can use the relation: 
+> ```math
+> F = C \times \frac{9}{5} + 32
+> ```
+
+`Answer` [TempConvert.java](src/TempConvert.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Temperature in °C: 10
+
+--- OUTPUT ---
+10.0°C = 50.0°F
+```
+
+### Maximum between 3
+WAP in Java to find the maximum between 3 given numbers.
+
+`Answer` [Max3.java](src/Max3.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - A: 3
+ - B: 4
+ - C: 12
+
+--- OUTPUT ---
+Maximum: 12
+```
+
+### Factorial
+WAP in Java to calculate the factorial of a given number n.
+
+`Answer` [Factorial.java](src/Factorial.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter n: 5
+
+--- OUTPUT ---
+5! = 120
+```
+
+> [!NOTE]
+> The solution above uses recursion, but the factorial can also be calculated using iteration.
+> ```java
+> static int factorial(int n)
+> {
+>     if(n == 0) return 1;
+> 
+>     int f = 1;
+>     for(int i = 1; i <= n; i++)
+>          f *= i;
+>  
+>     return f;
+> }
+> ```
+
+### Fibonacci Sequence
+WAP in Java to display the fibonacci sequence upto t terms.
+
+> [!NOTE]
+> In Mathematics, the Fibonacci sequence is a sequence in which each element is the sum of the two elements that precede it. Numbers that are part of the Fibonacci sequence are known as Fibonacci numbers. Read [more](https://en.wikipedia.org/wiki/Fibonacci_sequence#:~:text=ensemble%29%2E-,In,Fibonacci%20numbers).
+
+`Answer` [Fibonacci.java](src/Fibonacci.java)
+
+`Output`
+```
+--- INPUT ---
+ - No of terms(t): 7
+
+--- OUTPUT ---
+Fibonacci Sequence: 0 1 1 2 3 5 8 
+```
+
+### Swap numbers
+WAP in Java to swap 2 given numbers. 
+
+`Answer` [SwapNumbers.java](src/SwapNumbers.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - A: 7
+ - B: 6
+
+--- OUTPUT ---
+A: 6
+B: 7
+```
+
+> [!TIP]
+> If the swap is to be performed without using a 3rd variable then one can utilize the code below
+> ```java
+>int a = 5, b = 6;
+>a = a + b;
+>b = a - b;
+>a = a - b;
+> ```
 
 ### Setup
 All Java programs in this repository were written and ran inside [Visual Studio Code](https://code.visualstudio.com/). 
