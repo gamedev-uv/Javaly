@@ -10,22 +10,29 @@ Feel free to open up an issue if you are having any problems!
 ---
 
 ## Questions
-| Sl. No.  | Question                 | Link | 
-|   :-     | :-                       | :-:  | 
-|  1.      | Hello World              | [Link](#hello-world) |
-|  2.      | Add Numbers              | [Link](#add-numbers) |
-|  3.      | Calculate                | [Link](#calculate) |
-|  4.      | Travel Package           | [Link](#travel-package) |
-|  5.      | Odd Even                 | [Link](#odd-even) |
-|  6.      | Grade Calculator         | [Link](#grade-calculator) |
-|  7.      | Input Output             | [Link](#input-output) |
-|  8.      | Triangle Checker         | [Link](#triangle-checker) |
-|  9.      | Multiplication Table     | [Link](#multiplication-table) |
-|  10.     | Temperature Conversion   | [Link](#temperature-conversion) |
-|  11.     | Maximimum between 3      | [Link](#maximum-between-3) |
-|  12.     | Factorial                | [Link](#factorial) |
-|  13.     | Fibonacci Sequence       | [Link](#fibonacci-sequence) |
-|  14.     | Swap Numbers             | [Link](#swap-numbers) |
+| Sl. No.  | Question                          | Link | 
+|   :-     | :-                                | :-:  | 
+|  1.      | Hello World                       | [Link](#hello-world) |
+|  2.      | Add Numbers                       | [Link](#add-numbers) |
+|  3.      | Calculate                         | [Link](#calculate) |
+|  4.      | Travel Package                    | [Link](#travel-package) |
+|  5.      | Odd Even                          | [Link](#odd-even) |
+|  6.      | Grade Calculator                  | [Link](#grade-calculator) |
+|  7.      | Input Output                      | [Link](#input-output) |
+|  8.      | Triangle Checker                  | [Link](#triangle-checker) |
+|  9.      | Multiplication Table              | [Link](#multiplication-table) |
+|  10.     | Temperature Conversion            | [Link](#temperature-conversion) |
+|  11.     | Maximimum between 3               | [Link](#maximum-between-3) |
+|  12.     | Factorial                         | [Link](#factorial) |
+|  13.     | Fibonacci Sequence                | [Link](#fibonacci-sequence) |
+|  14.     | Swap Numbers                      | [Link](#swap-numbers) |
+|  15.     | Cat                               | [Link](#cat) |
+|  16.     | Dog                               | [Link](#dog) |
+|  17.     | Account                           | [Link](#account) |
+|  18.     | Classroom                         | [Link](#classroom) |
+|  19.     | Array Delete Insert               | [Link](#array-delete-insert) |
+|  20.     | Array Mininum Maximum             | [Link](#array-minimum-maximum) |
+|  21.     | Armstrong Palindrome Checker      | [Link](#armstrong-palindrome-checker) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -385,6 +392,154 @@ B: 7
 >b = a - b;
 >a = a - b;
 > ```
+
+### Cat 
+WAP in Java to create a class called `Cat` with instance variables `name` and `age`. 
+Implement a default constructor that initializes the `name` to `"Unknown"` and the `age` to `0`. Print the values of the variables.
+
+`Answer` [Cat.java](src/Cat.java)
+
+`Output Terminal`
+```
+--- OUTPUT ---
+ - Name: Unknown
+ - Age: 0
+```
+
+### Dog 
+WAP in Java to create a class called `Dog` with instance variables `name` and `color`.
+Implement a parameterized constructor that takes `name` and `color` as parameters and initializes the instance variables. Print the values of the variables.
+
+`Answer` [Dog.java](src/Dog.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Name: Bhow
+ - Color: Brown
+
+--- OUTPUT ---
+ - Name : Bhow
+ - Color: Brown
+```
+
+### Account
+WAP in Java to create a class called `Account` with instance variables `accountNumber` and `balance`. 
+Implement a parameterized constructor that initializes these variables with validation:
+- `accountNumber` should be non-null and non-empty.
+- `balance` should be non-negative.
+- Print an error message if the validation fails.
+
+`Answer` [Account.java](src/Account.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Account no: 0304122007
+ - Balance: 67.67
+
+--- OUTPUT ---
+ - Account no : 0304122007
+ - Balance    : 67.67
+```
+
+### Classroom 
+WAP in Java to create a class called `Classroom` with instance variables `className` and `students` (an array of strings).
+Implement a parameterized constructor that initializes these variables.  Print the values of the variables.
+
+`Answer` [Classroom.java](src/Classroom.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Class name: BTech CSE
+ - Student Count: 2
+  - Student 1: Momo Wala #1
+  - Student 2: Momo Wala #2
+
+--- OUTPUT ---
+ - Class name : BTech CSE
+ - Students
+    - Momo Wala #1
+    - Momo Wala #2
+```
+
+### Array Delete Insert
+WAP in Java to create an array of 10 elements and perform the following tasks :
+- Delete the 6th elements
+- Insert a new element in the 8th position
+
+Ensure to display the array after each operation. Values should be input from user.
+
+`Answer` [ArrayDeleteInsert.java](src/ArrayDeleteInsert.java)
+
+`Output Terminal`
+```
+--- ENTER 10 ELEMENTS ---
+ - Element at (0): 1
+ - Element at (1): 2
+ - Element at (2): 3
+ - Element at (3): 4
+ - Element at (4): 5
+ - Element at (5): 6
+ - Element at (6): 7
+ - Element at (7): 8
+ - Element at (8): 9
+ - Element at (9): 10
+
+Elements: 1 2 3 4 5 6 7 8 9 10 
+
+Deleted 6th element
+Elements: 1 2 3 4 5 7 8 9 10 
+
+Enter the new element: 67
+Inserted 67 into 8th positon
+Elements: 1 2 3 4 5 7 8 67 9 10
+```
+
+### Array Minimum Maximum
+WAP in Java to initialize an array of n elements and find the smallest and largest element and display them.
+
+`Answer` [ArrayMinMax.java](src/ArrayMinMax.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Element Count: 3
+--- ENTER 3 ELEMENTS ---
+ - Element at (0): 3
+ - Element at (1): 4
+ - Element at (2): 12
+
+--- OUTPUT ---
+Elements: 3 4 12 
+Min: 3 Max: 12
+```
+
+### Armstrong Palindrome Checker
+WAP in Java to check whether a number n is Armstrong or Palindrome or both.
+
+`Answer` [ArmstrongOrPalindrome.java](src/ArmstrongOrPalindrome.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - n: 153
+
+--- OUTPUT ---
+153 is an Armstrong number? true
+153 is a Palindrome number? false
+```
+
+```
+--- INPUT ---
+ - n: 11
+
+--- OUTPUT ---
+11 is an Armstrong number? false
+11 is a Palindrome number? true
+```
+
 
 ### Setup
 All Java programs in this repository were written and ran inside [Visual Studio Code](https://code.visualstudio.com/). 
