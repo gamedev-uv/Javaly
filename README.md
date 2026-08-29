@@ -10,29 +10,35 @@ Feel free to open up an issue if you are having any problems!
 ---
 
 ## Questions
-| Sl. No.  | Question                          | Link | 
-|   :-     | :-                                | :-:  | 
-|  1.      | Hello World                       | [Link](#hello-world) |
-|  2.      | Add Numbers                       | [Link](#add-numbers) |
-|  3.      | Calculate                         | [Link](#calculate) |
-|  4.      | Travel Package                    | [Link](#travel-package) |
-|  5.      | Odd Even                          | [Link](#odd-even) |
-|  6.      | Grade Calculator                  | [Link](#grade-calculator) |
-|  7.      | Input Output                      | [Link](#input-output) |
-|  8.      | Triangle Checker                  | [Link](#triangle-checker) |
-|  9.      | Multiplication Table              | [Link](#multiplication-table) |
-|  10.     | Temperature Conversion            | [Link](#temperature-conversion) |
-|  11.     | Maximimum between 3               | [Link](#maximum-between-3) |
-|  12.     | Factorial                         | [Link](#factorial) |
-|  13.     | Fibonacci Sequence                | [Link](#fibonacci-sequence) |
-|  14.     | Swap Numbers                      | [Link](#swap-numbers) |
-|  15.     | Cat                               | [Link](#cat) |
-|  16.     | Dog                               | [Link](#dog) |
-|  17.     | Account                           | [Link](#account) |
-|  18.     | Classroom                         | [Link](#classroom) |
-|  19.     | Array Delete Insert               | [Link](#array-delete-insert) |
-|  20.     | Array Mininum Maximum             | [Link](#array-minimum-maximum) |
-|  21.     | Armstrong Palindrome Checker      | [Link](#armstrong-palindrome-checker) |
+| Sl. No.  | Question                      | Link | 
+|   :-     | :-                            | :-:  | 
+|  1.      | Hello World                   | [Link](#hello-world) |
+|  2.      | Add Numbers                   | [Link](#add-numbers) |
+|  3.      | Calculate                     | [Link](#calculate) |
+|  4.      | Travel Package                | [Link](#travel-package) |
+|  5.      | Odd Even                      | [Link](#odd-even) |
+|  6.      | Grade Calculator              | [Link](#grade-calculator) |
+|  7.      | Input Output                  | [Link](#input-output) |
+|  8.      | Triangle Checker              | [Link](#triangle-checker) |
+|  9.      | Multiplication Table          | [Link](#multiplication-table) |
+|  10.     | Temperature Conversion        | [Link](#temperature-conversion) |
+|  11.     | Maximimum between 3           | [Link](#maximum-between-3) |
+|  12.     | Factorial                     | [Link](#factorial) |
+|  13.     | Fibonacci Sequence            | [Link](#fibonacci-sequence) |
+|  14.     | Swap Numbers                  | [Link](#swap-numbers) |
+|  15.     | Cat                           | [Link](#cat) |
+|  16.     | Dog                           | [Link](#dog) |
+|  17.     | Account                       | [Link](#account) |
+|  18.     | Classroom                     | [Link](#classroom) |
+|  19.     | Array Delete Insert           | [Link](#array-delete-insert) |
+|  20.     | Array Mininum Maximum         | [Link](#array-minimum-maximum) |
+|  21.     | Armstrong Palindrome Checker  | [Link](#armstrong-palindrome-checker) |
+|  22.     | Array Menu                    | [Link](#array-menu) |
+|  23.     | Matrix Menu                   | [Link](#matrix-menu) |
+|  24.     | String Operations             | [Link](#string-operations) |
+|  25.     | Anagram Checker               | [Link](#anagram-checker) |
+|  26.     | String Equals                 | [Link](#string-equals) |
+|  27.     | String Collection             | [Link](#string-collection) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -540,6 +546,318 @@ WAP in Java to check whether a number n is Armstrong or Palindrome or both.
 11 is a Palindrome number? true
 ```
 
+### Array Menu
+WAP in menu driven program in Java to perform the following operations on an integer array: 
+- Create and display an array.  
+- Insert an element at a specified position. 
+- Delete an element from a specified position.   
+- Search for a given element.  
+- Sort the array in ascending order.  
+- Exit the program.  
+
+`Answer` [ArrayMenu.java](src/ArrayMenu.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Length(n): 3
+
+--- Enter elements ---
+ - Element at 0: 67 
+ - Element at 1: 45
+ - Element at 2: 32
+Array: [67, 45, 32]
+
+--- OPERATIONS ---
+1 -> Insert Element
+2 -> Delete Element
+3 -> Search Element
+4 -> Sort Array
+5 -> Exit
+ - Choice: 1
+ - Value: 2
+ - Position: 3
+Array: [67, 45, 2, 32]
+
+--- OPERATIONS ---
+1 -> Insert Element
+2 -> Delete Element
+3 -> Search Element
+4 -> Sort Array
+5 -> Exit
+ - Choice: 2
+ - Position: 1
+Array: [45, 2, 32]
+
+--- OPERATIONS ---
+1 -> Insert Element
+2 -> Delete Element
+3 -> Search Element
+4 -> Sort Array
+5 -> Exit
+ - Choice: 3
+ - Value: 2
+Value 2 was found at index: 1
+
+--- OPERATIONS ---
+1 -> Insert Element
+2 -> Delete Element
+3 -> Search Element
+4 -> Sort Array
+5 -> Exit
+ - Choice: 4
+Array: [2, 32, 45]
+
+--- OPERATIONS ---
+1 -> Insert Element
+2 -> Delete Element
+3 -> Search Element
+4 -> Sort Array
+5 -> Exit
+ - Choice: 5
+
+Final Array: [2, 32, 45]
+```
+
+### Matrix Menu
+WAP in menu driven program to create a two-dimensional integer array (matrix) and perform the following operations using a menu-driven approach.
+- Matrix Creation and Display
+- Matrix Addition
+- Matrix Subtraction
+- Matrix Multiplication
+
+`Answer` [MatrixMenu.java](src/MatrixMenu.java)
+
+`Output Terminal`
+```
+--- INPUT [MATRIX A] ---
+ Enter dimension
+  - M1: 1
+  - N1: 2
+ Enter elements
+  - Element at 0, 0: 3
+  - Element at 0, 1: 4
+3 4 
+
+--- OPERATIONS ---
+1 -> Matrix Addition
+2 -> Matrix Subtraction
+3 -> Matrix Multiplication
+4 -> Exit
+ - Choice: 1
+--- INPUT [MATRIX B] ---
+ Enter dimension
+  - M2: 1
+  - N2: 2
+ Enter elements
+  - Element at 0, 0: 3  
+  - Element at 0, 1: 8
+3 8 
+
+--- SUM ---
+6 12 
+
+--- OPERATIONS ---
+1 -> Matrix Addition
+2 -> Matrix Subtraction
+3 -> Matrix Multiplication
+4 -> Exit
+ - Choice: 3
+--- INPUT [MATRIX B] ---
+ Enter dimension
+  - M2: 2  
+  - N2: 1
+ Enter elements
+  - Element at 0, 0: 1 
+  - Element at 1, 0: 0
+1 
+0 
+
+--- PRODUCT ---
+3 
+
+--- OPERATIONS ---
+1 -> Matrix Addition
+2 -> Matrix Subtraction
+3 -> Matrix Multiplication
+4 -> Exit
+ - Choice: 4
+```
+
+### String Operations
+WAP in Java to create a string and perform the following operations:
+- Find the length of the string.
+- Convert the string to uppercase and lowercase.
+- Display the character at a user-specified position.
+- Extract a substring from the given string.
+
+`Answer` [StringOperations.java](src/StringOperations.java)
+
+`Ouput Terminal`
+```
+Enter the string: @gamedev_uv
+--- OPERATIONS ---
+ 1 -> Length 
+ 2 -> To Uppercase
+ 3 -> To Lowercase
+ 4 -> Character at
+ 5 -> Substring
+ 6 -> Exit
+  - Choice: 1
+Length: 11
+
+Enter the string: Hello World
+--- OPERATIONS ---
+ 1 -> Length 
+ 2 -> To Uppercase
+ 3 -> To Lowercase
+ 4 -> Character at
+ 5 -> Substring
+ 6 -> Exit
+  - Choice: 2
+Uppercase: HELLO WORLD
+
+Enter the string: Java   
+--- OPERATIONS ---
+ 1 -> Length 
+ 2 -> To Uppercase
+ 3 -> To Lowercase
+ 4 -> Character at
+ 5 -> Substring
+ 6 -> Exit
+  - Choice: 3
+Lowercase: java
+
+Enter the string: Hello
+--- OPERATIONS ---
+ 1 -> Length 
+ 2 -> To Uppercase
+ 3 -> To Lowercase
+ 4 -> Character at
+ 5 -> Substring
+ 6 -> Exit
+  - Choice: 4
+ - Index: 2
+Char at 2: l
+
+Enter the string: Substring
+--- OPERATIONS ---
+ 1 -> Length 
+ 2 -> To Uppercase
+ 3 -> To Lowercase
+ 4 -> Character at
+ 5 -> Substring
+ 6 -> Exit
+  - Choice: 5
+ - Starting Index: 3
+ - End Index: 9
+Substring: string
+
+Enter the string: .
+--- OPERATIONS ---
+ 1 -> Length 
+ 2 -> To Uppercase
+ 3 -> To Lowercase
+ 4 -> Character at
+ 5 -> Substring
+ 6 -> Exit
+  - Choice: 6
+```
+
+### Token Counter
+WAP in Java to accept a sentence from the user and count the number of
+vowels, consonants, digits, spaces, and special characters present in the string.
+
+`Answer` [TokenCounter.java](src/TokenCounter.java)
+
+`Outputer Terminal`
+```
+--- INPUT ---
+ Enter string: Javaly by @gamedev_uv. 2nd Year
+
+--- OUTPUT ---
+ Vowel Count: 8
+ Consonant Count: 15
+ Digit Count: 1
+ Space Count: 4
+ Special Character Count: 3
+```
+
+### Anagram Checker
+WAP in Java to accept two strings and determine whether they are anagrams of each other.
+
+`Answer` [AnagramChecker.java](src/AnagramChecker.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ Enter 1st: Silent
+ Enter 2nd: Listen
+
+--- OUTPUT ---
+Anagrams? : true
+```
+
+```
+--- INPUT ---
+ Enter 1st: Javaly
+ Enter 2nd: Listen
+
+--- OUTPUT ---
+Anagrams? : false
+```
+
+### String Equals
+WAP in Java to demonstrate the difference between String literals and String objects created using `new`. Compare them using `==` and `equals()` and display the results with suitable output.
+
+`Answer` [StringEquals.java](src/StringEquals.java)
+
+`Output Terminal`
+```
+Hello World == Hello World : false
+Hello World.equals(Hello World): true
+```
+
+> [!TIP]
+> This happens as `==` compares to check if they are the same object i.e. they exist in the same place in memory which is obviously not the case as they are 2 different variables which are at separate locations. Thus it returns `false`.
+> 
+> The `equals()` method compares the value of the string which is the same in this case thus yielding `true`.
+
+### String Collection
+WAP in Java to store n strings in a String array and perform the following operations: 
+- Display all strings. 
+- Find the longest string. 
+- Find the shortest string.
+- Display the strings in reverse order
+
+`Answer` [StringCollection.java](src/StringCollection.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - String Count (N): 3
+ -- Enter Elements --
+  - Enter String#1: Javaly
+  - Enter String#2: by
+  - Enter String#3: @gamedev_uv
+
+--- OUTPUT ---
+ -- STRINGS --
+  Javaly
+  by
+  @gamedev_uv
+
+ -- LONGEST STRING --
+  @gamedev_uv
+
+ -- SHORTEST STRING --
+  by
+
+ -- REV STRINGS --
+  ylavaJ
+  yb
+  vu_vedemag@
+```
 
 ### Setup
 All Java programs in this repository were written and ran inside [Visual Studio Code](https://code.visualstudio.com/). 
