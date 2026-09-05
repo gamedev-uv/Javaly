@@ -43,7 +43,7 @@ Feel free to open up an issue if you are having any problems!
 |  29.     | Simple Calculator             | [Link](#simple-calculator) |
 |  30.     | Sign Checker                  | [Link](#sign-check) |
 |  31.     | Sum Till N                    | [Link](#sum-till-n) |
-|  32.     | Digits Counter                | [Link](#digit-counter) |
+|  32.     | Digit Counter                 | [Link](#digit-counter) |
 |  33.     | Reverse Number                | [Link](#reverse-number) |
 |  34.     | Sum Of Digits                 | [Link](#sum-of-digits) |
 
