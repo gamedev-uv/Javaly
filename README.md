@@ -39,6 +39,14 @@ Feel free to open up an issue if you are having any problems!
 |  25.     | Anagram Checker               | [Link](#anagram-checker) |
 |  26.     | String Equals                 | [Link](#string-equals) |
 |  27.     | String Collection             | [Link](#string-collection) |
+|  28.     | Student Details               | [Link](#student-details) |
+|  29.     | Simple Calculator             | [Link](#simple-calculator) |
+|  30.     | Sign Checker                  | [Link](#sign-check) |
+|  31.     | Sum Till N                    | [Link](#sum-till-n) |
+|  32.     | Digits Counter                | [Link](#digit-counter) |
+|  33.     | Reverse Number                | [Link](#reverse-number) |
+|  34.     | Sum Of Digits                 | [Link](#sum-of-digits) |
+
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -857,6 +865,140 @@ WAP in Java to store n strings in a String array and perform the following opera
   ylavaJ
   yb
   vu_vedemag@
+```
+
+### Student Details
+WAP in Java to accept a student's name, roll number, age, and department. Display the information in a properly formatted form.
+
+`Answer` [StudentDetails.java](src/StudentDetails.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Name: Yuvraj Bhowmik
+ - Roll number: 3
+ - Age: 19
+ - Department: Computer Science & Engineering 
+
+--- OUTPUT ---
+Name        : Yuvraj Bhowmik
+Age         : 19
+Roll number : 3
+Department  : Computer Science & Engineering
+```
+
+### Simple Calculator
+WAP in Java to accept two numbers and an operator (`+`, `-`, `*`, `/`) and display the result. Use may use a switch statement.
+
+`Answer` [SimpleCalculator.java](src/SimpleCalculator.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - 1st Operand: 3
+ - 2nd Operand: 4
+ - Operator: *
+
+--- OUTPUT ---
+3.0 * 4.0 = 12.0
+```
+
+### Sign Check 
+WAP in Java to classify an input number as positive, negative, or zero.
+
+`Answer` [SignCheck.java](src/SignCheck.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 3
+
+--- OUTPUT ---
+3 is positive
+```
+
+### Sum Till N
+WAP in Java to accept n and calculate `1` + `2` + `...` + `n` using a loop.
+
+`Answer` [SumTillN.java](src/SumTillN.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 3
+
+--- OUTPUT ---
+ Sum: 6
+```
+
+> [!TIP]
+> This is a $O(n)$ solution, and was done in this way as it was asked by the question explicitly. If not mentioned use the summation formula which is - 
+> ```math
+> \text{Sum till n} = \frac{n \times (n+1)}{2}
+> ```
+> This formula is of course $O(1)$.
+
+### Digit Counter
+WAP in Java to input a number and count the number of digits in it.
+
+`Answer` [DigitCounter.java](src/DigitCounter.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 12
+
+--- OUTPUT ---
+ Digit Count(12): 2
+```
+
+> [!NOTE]
+> Here we are using a for loop followed by a `;` which creates a loop with an empty body, So writting this 
+> ```java
+>for(int t = Math.abs(n); t > 0; t /= 10, dC++);
+> ```
+> Is equivalent to 
+> ```java
+>for(int t = Math.abs(n); t > 0; t /= 10, dC++)
+> {
+>     //Empty body
+> }
+> ```
+> 
+> We are using the `abs()` method from the `Math` class here as else this for loop wouldn't work for negative numbers in this form.
+> Each iteration we are dividing the value of `t` by `10` which decreases a digit from the right till it is zero (as it is an `int`). And we are simultenously increasing the digit count.
+>
+> If you don't wanna use the `abs()` method you can do something like this - 
+> ```java
+> for(int t = n; t != 0; t /= 10, dC++);
+> ```
+
+### Reverse Number
+WAP in Java to reverse an integer without converting it into a String.
+
+`Answer` [ReverseNumber.java](src/ReverseNumber.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 2143
+
+--- OUTPUT ---
+ Reverse(2143): 3412
+```
+
+### Sum Of Digits
+WAP in Java to accept an integer and calculate the sum of its digits.
+
+`Answer` [SumOfDigits.java](src/SumOfDigits.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 12
+
+--- OUTPUT ---
+ Sum Digits(12): 3
 ```
 
 ### Setup
