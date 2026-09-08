@@ -18,13 +18,13 @@ class AnagramChecker
         for(int i = 0; i < len1; i++)
         {
             char ch = s1.charAt(i);
-
             int index = s2.indexOf(ch);
-            if(index == -1) return false;
+            if(index == -1) 
+                return false;
 
-            StringBuilder builder = new StringBuilder(s2);
-            builder.setCharAt(index, ch);
-            s2 = builder.toString();
+            StringBuffer buffer = new StringBuffer(s2);
+            buffer.setCharAt(index, '#');
+            s2 = buffer.toString();
         }
 
         return true;
