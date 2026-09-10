@@ -28,25 +28,11 @@ class SimpleCalculator
         System.out.print(a + " " + operator + " " + b + " = ");
         switch(operator)
         {
-            case '+':
-                System.out.print(a + b);
-            break;
-            
-            case '-':
-                System.out.print(a - b);
-            break;
-
-            case '*':
-                System.out.print(a * b);
-            break;
-
-            case '/':
-                System.out.print(a / b);
-            break;
-
-            default: 
-                System.out.print("Invalid Operator");
-            break;
+            case '+': System.out.print(a + b); break;
+            case '-': System.out.print(a - b); break;
+            case '*': System.out.print(a * b); break;
+            case '/': System.out.print(a / b); break;
+            default:  System.out.print("Invalid Operator"); break;
         }
     }
 }

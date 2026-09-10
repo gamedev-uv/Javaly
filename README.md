@@ -46,7 +46,11 @@ Feel free to open up an issue if you are having any problems!
 |  32.     | Digit Counter                 | [Link](#digit-counter) |
 |  33.     | Reverse Number                | [Link](#reverse-number) |
 |  34.     | Sum Of Digits                 | [Link](#sum-of-digits) |
-
+|  35.     | Rectangle                     | [Link](#rectangle) |
+|  36.     | Circle                        | [Link](#circle) |
+|  37.     | Book                          | [Link](#book) |
+|  38.     | Students Marks Average        | [Link](#student-marks-average) |
+|  39.     | Employee                      | [Link](#employee) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -999,6 +1003,95 @@ WAP in Java to accept an integer and calculate the sum of its digits.
 
 --- OUTPUT ---
  Sum Digits(12): 3
+```
+
+### Rectangle
+WAP in Java to create a Rectangle class with length and breadth and methods for area and perimeter.
+
+`Answer` [Rectangle.java](src/Rectangle.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Length: 3
+ - Breadth: 4
+
+--- OUTPUT ---
+ - Perimeter: 14.0
+ - Area     : 12.0
+```
+
+### Circle 
+WAP in Java to create a Circle class with radius, a constructor, and methods for area and circumference
+
+`Answer` [Circle.java](src/Circle.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Radius: 3
+
+--- OUTPUT ---
+ - Circumference: 18.849556
+ - Area         : 28.274334
+```
+
+### Book
+WAP in Java to create a Book class with title, author, and price. Use a parameterized constructor and displayBook(). Create three objects.
+
+`Answer` [Book.java](src/Book.java)
+
+`Output Terminal`
+```
+Project Hail Mary
+by Andy Weir
+Rs. 349.0
+
+Dune
+by Frank Herbert
+Rs. 550.0
+
+The Three-Body Problem
+by Cixin Liu
+Rs. 540.0
+```
+
+### Student Marks Average
+WAP in Java to create a Student class with marks of three subjects. Calculate total, average, and display the output.
+
+`Answer` [StudentMarksAvg.java](src/StudentMarksAvg.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Marks in A: 50
+ - Marks in B: 90
+ - Marks in C: 95
+
+--- OUTPUT ---
+ - Total  : 235.0
+ - Average: 78.333336
+```
+
+### Employee 
+WAP in Java to create an Employee class with ID, name, and basic salary. Calculate HRA (20%), DA (10%), and gross salary
+
+`Answer` [Employee.java](src/Employee.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - ID: 3412
+ - Name: Yuvraj Bhowmik
+ - Basic Salary: 100
+
+--- OUTPUT ---
+ - ID: 3412
+ - Name: Yuvraj Bhowmik
+ - Base Salary: 100.0
+ - HRA: 20.0
+ - DA: 10.0
+ - Total Salary: 130.0
 ```
 
 ### Setup
