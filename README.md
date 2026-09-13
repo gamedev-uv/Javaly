@@ -51,6 +51,11 @@ Feel free to open up an issue if you are having any problems!
 |  37.     | Book                          | [Link](#book) |
 |  38.     | Students Marks Average        | [Link](#student-marks-average) |
 |  39.     | Employee                      | [Link](#employee) |
+|  40.     | Second Largest                | [Link](#second-largest) |
+|  41.     | Element Frequency             | [Link](#element-frequency) |
+|  42.     | Odd Even Splitter             | [Link](#odd-even-splitter) |
+|  43.     | Rotate Array                  | [Link](#rotate-array) |
+|  44.     | Matrix Addition               | [Link](#matrix-addition) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1092,6 +1097,139 @@ WAP in Java to create an Employee class with ID, name, and basic salary. Calcula
  - HRA: 20.0
  - DA: 10.0
  - Total Salary: 130.0
+```
+
+### Second Largest
+WAP in Java to accept `n` integers and find the second-largest element without sorting the array. 
+
+`Answer` [SecondLargest.java](src/SecondLargest.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 5
+--- ENTER 5 ELEMENTS ---
+ - Element at (0): 67
+ - Element at (1): 40
+ - Element at (2): 20
+ - Element at (3): 45
+ - Element at (4): 89
+
+--- OUTPUT ---
+Elements: 67 40 20 45 89 
+ - Second Largest Element: 67
+```
+
+### Element Frequency
+WAP in Java to accept an integer array and determine how many times each distinct element occurs. 
+
+`Answer` [ElementFrequency.java](src/ElementFrequency.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 10
+--- ENTER 10 ELEMENTS ---
+ - Element at (0): 1
+ - Element at (1): 2
+ - Element at (2): 2
+ - Element at (3): 3
+ - Element at (4): 3
+ - Element at (5): 3
+ - Element at (6): 4
+ - Element at (7): 4
+ - Element at (8): 4
+ - Element at (9): 4
+
+--- OUTPUT ---
+Elements: 1 2 2 3 3 3 4 4 4 4 
+
+-- Frequency --
+1 occurs 1 times
+2 occurs 2 times
+3 occurs 3 times
+4 occurs 4 times
+```
+
+### Odd Even Splitter
+WAP in Java to accept an array and create separate arrays for even and odd numbers. 
+
+`Answer` [OddEvenSplitter.java](src/OddEvenSplitter.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 10
+--- ENTER 10 ELEMENTS ---
+ - Element at (0): 1
+ - Element at (1): 2
+ - Element at (2): 3
+ - Element at (3): 4
+ - Element at (4): 5
+ - Element at (5): 6
+ - Element at (6): 7
+ - Element at (7): 8
+ - Element at (8): 9
+ - Element at (9): 10
+
+--- OUTPUT ---
+ - Original Elements: 1 2 3 4 5 6 7 8 9 10 
+ - Even Elements: 2 4 6 8 10 
+ - Odd Elements: 1 3 5 7 9 
+```
+
+### Rotate Array 
+WAP in Java to an array to the right by k positions.
+
+`Answer` [RotateArray.java](src/RotateArray.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - N: 5 
+--- ENTER 5 array ---
+ - Element at (0): 1
+ - Element at (1): 2
+ - Element at (2): 3
+ - Element at (3): 4
+ - Element at (4): 5
+ - k: 3
+
+--- OUTPUT ---
+ - Original Elements: 1 2 3 4 5 
+ - Rotated Elements: 3 4 5 1 2
+```
+
+### Matrix Addition
+WAP in Java Matrix Addition Accept two matrices of the same dimensions and calculate their sum.
+
+`Answer` [MatrixAdd.java](src/MatrixAdd.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter dimensions - 
+  - M: 2
+  - N: 2
+ -- INPUT [MATRIX A] --
+  - Element at 0, 0: 1
+  - Element at 0, 1: 2
+  - Element at 1, 0: 3
+  - Element at 1, 1: 4
+1 2 
+3 4 
+
+ -- INPUT [MATRIX B] --
+  - Element at 0, 0: 1
+  - Element at 0, 1: 1
+  - Element at 1, 0: 1
+  - Element at 1, 1: 1
+1 1 
+1 1 
+
+--- SUM ---
+2 3 
+4 5 
 ```
 
 ### Setup
