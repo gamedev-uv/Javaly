@@ -47,6 +47,10 @@ class SecondLargest
 
         System.out.println("\n--- OUTPUT ---");
         DisplayArray(elements);
-        System.out.println(" - Second Largest Element: " + secondLargest);
+
+        if(secondLargest != Integer.MIN_VALUE)
+            System.out.println(" - Second Largest Element: " + secondLargest);
+        else
+            System.out.println(" - No distinct second largest number");
     }
 }

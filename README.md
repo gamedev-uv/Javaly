@@ -56,6 +56,10 @@ Feel free to open up an issue if you are having any problems!
 |  42.     | Odd Even Splitter             | [Link](#odd-even-splitter) |
 |  43.     | Rotate Array                  | [Link](#rotate-array) |
 |  44.     | Matrix Addition               | [Link](#matrix-addition) |
+|  45.     | Matrix Diagonal Sum           | [Link](#matrix-diagonal-sum) |
+|  46.     | Word Frequency                | [Link](#word-frequency) |
+|  47.     | Remove Duplicate Characters   | [Link](#remove-duplicates) |
+|  48.     | String Rotation Check         | [Link](#string-rotation) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1230,6 +1234,93 @@ WAP in Java Matrix Addition Accept two matrices of the same dimensions and calcu
 --- SUM ---
 2 3 
 4 5 
+```
+
+### Matrix Diagonal Sum
+WAP in Java to accept a square matrix and calculate the sums of the main and secondary diagonals.
+
+`Answer` [DiagonalSum.java](src/DiagonalSum.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter dimension - 
+  - N: 3
+ -- INPUT -- 
+  - Element at 0, 0: 1
+  - Element at 0, 1: 2
+  - Element at 0, 2: 3
+  - Element at 1, 0: 4
+  - Element at 1, 1: 5
+  - Element at 1, 2: 6
+  - Element at 2, 0: 7
+  - Element at 2, 1: 8
+  - Element at 2, 2: 9
+1 2 3 
+4 5 6 
+7 8 9 
+
+--- PRIMARY DIAGONAL ---
+1 - - 
+- 5 - 
+- - 9 
+Sum: 15
+
+--- SECONDARY DIAGONAL ---
+- - 3 
+- 5 - 
+7 - - 
+Sum: 15
+```
+
+### Word Frequency
+WAP in Java to accept a sentence and find the frequency of each word.
+
+`Answer` [WordFrequency.java](src/WordFrequency.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter the sentence: She sells sea shells at the sea shore
+
+--- OUTPUT ---
+ -> She x1
+ -> sells x1
+ -> sea x2
+ -> shells x1
+ -> at x1
+ -> the x1
+ -> shore x1
+```
+
+### Remove Duplicates
+WAP in Java to create another String after removing duplicate characters from the input.
+
+`Answer` [RemoveDuplicates.java](src/RemoveDuplicates.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - String: Hello
+
+--- OUTPUT ---
+ Old String: Hello
+ New String: Helo
+```
+
+### String Rotation
+WAP in Java to determine whether one string is a rotation of another.
+
+`Answer` [StringRotation.java](src/StringRotation.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Original String: DOG
+ - Test String: GDO
+
+--- OUTPUT ---
+ It is a rotation
 ```
 
 ### Setup
