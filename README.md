@@ -60,6 +60,11 @@ Feel free to open up an issue if you are having any problems!
 |  46.     | Word Frequency                | [Link](#word-frequency) |
 |  47.     | Remove Duplicate Characters   | [Link](#remove-duplicates) |
 |  48.     | String Rotation Check         | [Link](#string-rotation) |
+|  49.     | Employee Manager              | [Link](#employee-manager) |
+|  50.     | Multilevel Inheritance        | [Link](#multilevel-inheritance) |
+|  51.     | Shape Inheritance             | [Link](#shape-inheritance) |
+|  52.     | Salary Inheritance            | [Link](#salary-inheritance) |
+|  53.     | Student Inheritance           | [Link](#student-inheritance) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1321,6 +1326,101 @@ WAP in Java to determine whether one string is a rotation of another.
 
 --- OUTPUT ---
  It is a rotation
+```
+
+### Employee Manager 
+WAP in Java to Create a class `Employee` with attributes `name` and `salary` and a method to display them. Create a class `Manager` that inherits from `Employee` and adds an attribute `department`. Display all the details.
+
+`Answer` [EmployeeManager.java](src/EmployeeManager.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ -- Enter Employee Details --
+  - Name: Yuvraj Bhowmik
+  - Salary: 100
+
+ -- Enter Manager Details --
+  - Name: Mr. Ludford
+  - Salary: 2000
+  - Department: R&D 
+
+--- OUTPUT ---
+Name  : Yuvraj Bhowmik
+Salary: 100.0
+
+Name  : Mr. Ludford
+Salary: 2000.0
+Department: R&D
+```
+
+### Multilevel Inheritance
+WAP in Java to create three classes: `Person`, `Employee`, and `Manager`.
+Demonstrate multilevel inheritance and display the details of a manager.
+
+`Answer` [MultiInheritance.java](src/MultiInheritance.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Name: Yuvraj Bhowmik
+ - Age: 19
+ - Salary: 100
+ - Department: R&D
+
+--- OUTPUT ---
+Name      : Yuvraj Bhowmik
+Age       : 19
+Salary    : 100.0
+Department: R&D
+```
+
+### Shape Inheritance
+WAP in Java to create a superclass `Shape` with a method `display()`.
+Create two subclasses `Circle` and `Rectangle` that calculate and display their respective areas.
+
+`Answer` [Shapes.java](src/Shapes.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Circle - 
+   Radius: 3
+
+ - Rectangle - 
+   Length: 4
+   Breadth: 12
+
+--- OUTPUT ---
+Circle Area   : 28.274334
+Rectangle Area: 48.0
+```
+
+### Salary Inheritance
+WAP in Java to create a super class `Employee` containing
+`employeeId`, `name`, and `basicSalary`.
+
+Create subclasses `Developer` and `Manager`. Override a method `calculateSalary()` in both subclasses by adding different allowances. Display the final salary of each employee.
+
+`Answer` [SalaryInheritance.java](src/SalaryInheritance.java)
+
+`Output Terminal`
+```
+--- OUTPUT ---
+Developer Salary: 1100.0
+Manager Salary  : 2500.0
+```
+
+### Student Inheritance
+WAP in Java to create a superclass `Person` containing a variable name and a method `display()`.
+Create a subclass `Student` with its own name variable. Use the `super` keyword to access the superclass variable and method.
+
+`Answer` [StudentInheritance.java](src/StudentInheritance.java)
+
+`Output Terminal`
+```
+Person Name:  @gamedev_uv [STUDENT]
+Student Name: @gamedev_uv
 ```
 
 ### Setup
