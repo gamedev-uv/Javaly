@@ -65,6 +65,11 @@ Feel free to open up an issue if you are having any problems!
 |  51.     | Shape Inheritance             | [Link](#shape-inheritance) |
 |  52.     | Salary Inheritance            | [Link](#salary-inheritance) |
 |  53.     | Student Inheritance           | [Link](#student-inheritance) |
+|  54.     | Safe Division                 | [Link](#safe-division) |
+|  55.     | Age Validity                  | [Link](#age-validity) |
+|  56.     | Array Access Validity         | [Link](#array-access-validity) |
+|  57.     | Generic Exceptions            | [Link](#generic-exceptions) |
+|  58.     | Custom Exception              | [Link](#custom-exception) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1421,6 +1426,147 @@ Create a subclass `Student` with its own name variable. Use the `super` keyword 
 ```
 Person Name:  @gamedev_uv [STUDENT]
 Student Name: @gamedev_uv
+```
+
+### Safe Division
+WAP in Java to accept two integers and perform division. Handle division by zero and invalid input.
+
+`Answer` [SafeDivision.java](src/SafeDivision.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter A: 3
+ - Enter B: 0
+
+--- OUTPUT ---
+java.lang.ArithmeticException: / by zero
+```
+
+```
+--- INPUT ---
+ - Enter A: 12
+ - Enter B: 3
+
+--- OUTPUT ---
+12 / 3 = 4
+```
+
+### Age Validity
+WAP in Java to create `validateAge(int age)`. If age is less than 18, generate an exception with an appropriate message.
+
+`Answer` [AgeValidity.java](src/AgeValidity.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter Age: 12
+
+--- OUTPUT ---
+Exception in thread "main" java.lang.Exception: Must be above 18!
+        at AgeValidity.validateAge(AgeValidity.java:10)
+        at AgeValidity.main(AgeValidity.java:25)
+```
+
+```
+--- INPUT ---
+ - Enter Age: 19
+
+--- OUTPUT ---
+Age is valid
+```
+
+### Array Access Validity
+WAP in Java accept an array and index. Display the element and handle invalid indexes.
+
+`Answer` [ArrayAccessValidity.java](src/ArrayAccessValidity.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter N: 5
+ - Enter elements -
+   - Element at 0: 1
+   - Element at 1: 2
+   - Element at 2: 3
+   - Element at 3: 4
+   - Element at 4: 5
+ - Enter Index: 6
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 5
+```
+
+```
+--- INPUT ---
+ - Enter N: 5
+ - Enter elements -
+   - Element at 0: 1
+   - Element at 1: 2
+   - Element at 2: 3
+   - Element at 3: 4
+   - Element at 4: 5
+ - Enter Index: 3
+Element at 3: 4
+```
+
+### Generic Exceptions
+WAP in Java to perform division while appropriately handling invalid numeric input, division by zero, and other runtime problems
+
+`Answer` [MultipleException.java](src/MultipleException.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter A: 5
+ - Enter B: Four
+java.util.InputMismatchException
+```
+
+```
+--- INPUT ---
+ - Enter A: 3
+ - Enter B: 0
+
+--- OUTPUT ---
+java.lang.ArithmeticException: / by zero
+```
+
+```
+--- INPUT ---
+ - Enter A: 12
+ - Enter B: 3
+
+--- OUTPUT ---
+12 / 3 = 4
+```
+
+### Custom Exception
+WAP in Java to create InvalidMarksException. Throw it when marks are outside 0–100.
+
+`Answer` [CustomException.java](src/CustomException.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter marks: -5
+
+Exception in thread "main" InvalidMarksException: -5 is not valid as it is not between 0 and 100
+        at CustomException.main(CustomException.java:25)
+```
+
+```
+--- INPUT ---
+ - Enter marks: 101
+
+Exception in thread "main" InvalidMarksException: 101 is not valid as it is not between 0 and 100
+        at CustomException.main(CustomException.java:25)
+```
+
+```
+--- INPUT ---
+ - Enter marks: 95
+
+--- OUTPUT ---
+Valid marks
 ```
 
 ### Setup
