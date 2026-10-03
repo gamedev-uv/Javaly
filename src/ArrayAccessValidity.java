@@ -1,4 +1,4 @@
-//WAP in Java accept an array and index. Display the element and handle invalid indexes.
+//WAP in Java accept an array and index. Display the element and handle invalid indices.
 
 import java.util.Scanner;
 

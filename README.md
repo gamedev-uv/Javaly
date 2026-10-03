@@ -1477,7 +1477,7 @@ Age is valid
 ```
 
 ### Array Access Validity
-WAP in Java accept an array and index. Display the element and handle invalid indexes.
+WAP in Java accept an array and index. Display the element and handle invalid indices.
 
 `Answer` [ArrayAccessValidity.java](src/ArrayAccessValidity.java)
 
@@ -1511,7 +1511,7 @@ Element at 3: 4
 ### Generic Exceptions
 WAP in Java to perform division while appropriately handling invalid numeric input, division by zero, and other runtime problems
 
-`Answer` [MultipleException.java](src/MultipleException.java)
+`Answer` [GenericExceptions.java](src/GenericExceptions.java)
 
 `Output Terminal`
 ```
