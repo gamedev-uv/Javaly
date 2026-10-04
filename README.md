@@ -70,6 +70,8 @@ Feel free to open up an issue if you are having any problems!
 |  56.     | Array Access Validity         | [Link](#array-access-validity) |
 |  57.     | Generic Exceptions            | [Link](#generic-exceptions) |
 |  58.     | Custom Exception              | [Link](#custom-exception) |
+|  59.     | Bubble Sort                   | [Link](#bubble-sort) |
+|  60.     | Binary Search                 | [Link](#binary-search) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1567,6 +1569,79 @@ Exception in thread "main" InvalidMarksException: 101 is not valid as it is not 
 
 --- OUTPUT ---
 Valid marks
+```
+
+### Bubble Sort
+WAP in Java to input an array from the user and perform bubble sort to sort the array.
+
+`Answer` [BubbleSort.java](src/BubbleSort.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Enter N: 5
+ - Enter Elements - 
+  - Elements 0: 9
+  - Elements 1: 1
+  - Elements 2: 2
+  - Elements 3: 0
+  - Elements 4: 4
+
+--- OUTPUT ---
+ Original: 9 1 2 0 4 
+ Sorted  : 0 1 2 4 9 
+```
+
+```
+--- INPUT ---
+ - Enter N: 5
+ - Enter Elements - 
+  - Elements 0: 1
+  - Elements 1: 2
+  - Elements 2: 3
+  - Elements 3: 4
+  - Elements 4: 5
+
+--- OUTPUT ---
+ Original: 1 2 3 4 5 
+ Sorted  : 1 2 3 4 5 
+```
+
+### Binary Search
+WAP in Java to input an array from the user and perform binary search to find an element in it
+
+`Answer` [BinarySearch.java](src/BinarySearch.java)
+
+`Output Terminal`
+
+```
+--- INPUT ---
+ - Enter N: 5
+ - Enter Elements - 
+  - Elements 0: 1
+  - Elements 1: 2
+  - Elements 2: 3
+  - Elements 3: 4
+  - Elements 4: 5
+ - Element to be searched: 2
+
+--- OUTPUT ---
+2 was found at index 1
+```
+
+```
+--- INPUT ---
+ - Enter N: 5
+ - Enter Elements - 
+  - Elements 0: 1
+  - Elements 1: 2
+  - Elements 2: 3
+  - Elements 3: 4
+  - Elements 4: 5
+ - Element to be searched: 6
+
+--- OUTPUT ---
+6 wasn't found in the array
 ```
 
 ### Setup
