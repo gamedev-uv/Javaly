@@ -74,6 +74,8 @@ Feel free to open up an issue if you are having any problems!
 |  60.     | Binary Search                 | [Link](#binary-search) |
 |  61.     | Bank Account Manager          | [Link](#bank-account-manager) |
 |  62.     | University Manager            | [Link](#university-manager) |
+|  63.     | Vehicle Inheritance           | [Link](#vehicle-manager) |
+|  64.     | Person Student                | [Link](#person-to-student-inheritance) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1794,6 +1796,55 @@ Department           : CSE
 Semester             : 3
 Passed?              : true
 ScholarshipEligible? : true
+```
+
+### Vehicle Manager 
+WAP in Java to create Vehicle with registration number and brand. Derive Car and Bike with one additional property each.
+
+`Answer` [src/VehicleManager.java](src/VehicleManager.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+-- Enter Car Details --
+ - Registration No: 12634126
+ - Brand: Suzuki
+ - Seat Count: 5
+-- Enter Bike Details --
+ - Registration No: 34121234
+ - Brand: Maruti
+ - Has Abs: true
+
+--- OUTPUT ---
+-- Car Details --
+ - Registration No: 12634126
+ - Brand          : Suzuki
+ - SeatCount      : 5
+
+-- Bike Details --
+ - Registration No: 34121234
+ - Brand          : Suzuki
+ - Has ABS        : true
+```
+
+### Person to Student Inheritance
+WAP in Java to create Person with name and age. Derive Student with roll number and course.
+
+`Answer` [PersonStudent.java](src/PersonStudent.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Name: Yuvraj Bhowmik
+ - Age: 19
+ - Roll Number: 1128
+ - Course Name: CSE
+
+--- OUTPUT ---
+ - Name       : Yuvraj Bhowmik
+ - Age        : 19
+ - Roll No    : 1128
+ - Course Name: CSE
 ```
 
 ### Setup
