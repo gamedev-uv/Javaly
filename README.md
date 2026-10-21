@@ -72,6 +72,8 @@ Feel free to open up an issue if you are having any problems!
 |  58.     | Custom Exception              | [Link](#custom-exception) |
 |  59.     | Bubble Sort                   | [Link](#bubble-sort) |
 |  60.     | Binary Search                 | [Link](#binary-search) |
+|  61.     | Bank Account Manager          | [Link](#bank-account-manager) |
+|  62.     | University Manager            | [Link](#university-manager) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1642,6 +1644,156 @@ WAP in Java to input an array from the user and perform binary search to find an
 
 --- OUTPUT ---
 6 wasn't found in the array
+```
+
+### Bank Account Manager 
+WAP in Java to design and implement a Banking Management System.
+
+Requirements:
+1. Create an class `BankAccount` with the following:
+ - Data members: `accountNumber`, `accountHolderName`, `balance`.
+ - Abstract methods: `calculateInterest()` and `withdraw(double amount)`.
+ - Concrete methods: `deposit(double amount)` and `displayAccountDetails()`.
+
+2. Create two subclasses:
+ - `SavingsAccount`: Interest is calculated at 5% annually. Withdrawals must maintain a minimum balance of ₹1,000.
+ - `CurrentAccount`: No interest is provided. A minimum balance is not required, but an overdraft limit of ₹10,000 is permitted.
+
+3. Create a menu-driven application that supports:
+ - Creating savings and current accounts.
+ - Depositing and withdrawing money.
+ - Calculating interest.
+ - Displaying account details.
+
+Constraints:
+ - Prevent withdrawals when the amount exceeds the permitted limit.
+ - Ensure deposit and withdrawal amounts are positive.
+ - Demonstrate constructor inheritance or constructor chaining where appropriate.
+
+`Answer` [BankAccountManager.java](src/BankAccountManager.java)
+
+`Output Terminal`
+```
+--- INPUT ---
+ - Name: @gamedev_uv
+ - Savings Account No: 100
+ - Savings Account Balance: 2000
+ - Current Account No: 500
+ - Current Account Balance: 10000
+- Savings account has been selected by default -
+
+--- Commands ---
+ 0. Switch to Current Account
+ 1. Deposit
+ 2. Withdraw
+ 3. Calculate Interest
+ 4. Display Account Details
+ X. Exit
+ - Choice: 1
+
+ - Amount: 100
+Rs.100.0 was deposited into the account. Resulting Balance: 2100.0
+
+--- Commands ---
+ 0. Switch to Current Account
+ 1. Deposit
+ 2. Withdraw
+ 3. Calculate Interest
+ 4. Display Account Details
+ X. Exit
+ - Choice: 2
+
+ - Amount: 1300
+Current Balance: Rs.2100.0
+Can't withdraw Rs.1300.0 as a minimum balance of Rs.1000 is to be maintained!
+
+--- Commands ---
+ 0. Switch to Current Account
+ 1. Deposit
+ 2. Withdraw
+ 3. Calculate Interest
+ 4. Display Account Details
+ X. Exit
+ - Choice: 3
+
+Interest of Rs.105.00000156462193 has been added to the account. Resulting Balance: 2205.000001564622
+
+--- Commands ---
+ 0. Switch to Current Account
+ 1. Deposit
+ 2. Withdraw
+ 3. Calculate Interest
+ 4. Display Account Details
+ X. Exit
+ - Choice: 4
+
+
+ - Account Details - 
+Number      : 100
+Holder Name : @gamedev_uv
+Balance     : Rs.2205.000001564622
+
+--- Commands ---
+ 0. Switch to Current Account
+ 1. Deposit
+ 2. Withdraw
+ 3. Calculate Interest
+ 4. Display Account Details
+ X. Exit
+ - Choice: 5
+```
+
+### University Manager
+WAP in Java to develop a simple University Examination and Grading System.
+
+Requirements:
+1. Create an abstract class `Person` with:
+ - Data members: `name`, `id`.
+ - Abstract method: `displayRole()`.
+ - Concrete method: `displayBasicDetails()`.
+
+2. Create a class `Student` that inherits from `Person` with:
+ - Additional attributes: `department`, `semester`.
+ - A method `calculateGrade()` (to be overridden).
+
+3. Create two subclasses:
+ - `UndergraduateStudent`: Grade calculation based on marks in 5 subjects. A student must pass every subject (minimum 40 marks).
+ - `PostgraduateStudent`: Grade calculation based on marks in 4 subjects, with a minimum pass mark of 50 per subject.
+
+4. Implement an additional abstract class or interface `ScholarshipEligible` with a method `checkScholarshipEligibility()`.
+
+5. Apply the following scholarship rules:
+ - Undergraduate: Eligible if the average marks are at least 80% and all subjects are passed.
+ - Postgraduate: Eligible if the average marks are at least 85% and all subjects are passed.
+
+6. Output
+ - Display student details.
+ - Calculate grades using runtime polymorphism.
+ - Check scholarship eligibility.
+
+`Output Terminal`
+```
+--- Student Creator ---
+ - Enter 0 for UG 1 for PG: 0
+ - Name: gamedev_uv
+ - ID: 1028
+ - Department: CSE
+ - Semester: 3
+
+- Enter Marks for the Subjects - 
+ - Subject 1: 90
+ - Subject 2: 95
+ - Subject 3: 67
+ - Subject 4: 68
+ - Subject 5: 50
+
+-- Basic Details --
+Name                 : gamedev_uv
+ID                   : 1028
+Department           : CSE
+Semester             : 3
+Passed?              : true
+ScholarshipEligible? : true
 ```
 
 ### Setup
