@@ -1849,6 +1849,101 @@ WAP in Java to create Person with name and age. Derive Student with roll number 
  - Course Name: CSE
 ```
 
+### Campus Vehicle Manager
+WAP in Java to maintain information about different vehicles used on campus, such as Buses, Electric Carts, and Security Vehicles.
+
+#### Base Class: `Vehicle`
+- `vehicleId`
+- `vehicleName`
+- `maxSpeed`
+- A parameterized constructor to initialize all attributes.
+- `displayInfo()`: Displays the vehicle details.
+- `calculateMaintenanceCost()`: Returns the maintenance cost using a default implementation.
+
+#### Derived Class: `Bus`
+- `seatingCapacity`
+- Override `displayInfo()` to display all bus details.
+- Override `calculateMaintenanceCost()` to calculate the maintenance cost using the formula - `Maintenance Cost = Seating Capacity × 100`
+
+#### Derived Class: `ElectricCart`
+- `batteryCapacity`
+- Override `displayInfo()` to display all electric cart details.
+- Override `calculateMaintenanceCost()` to calculate the maintenance cost using the formula - `Maintenance Cost = Battery Capacity × 50`
+
+#### Derived Class: `PatrolCar`
+- `patrolHours`
+- Override `displayInfo()` to display all security vehicle details.
+- Override `calculateMaintenanceCost()` to calculate the maintenance cost using the formula - `Maintenance Cost = Patrol Hours × 75`
+
+Create an `ArrayList<Vehicle>` to store objects of the following classes:
+- `Bus`
+- `ElectricCart`
+- `PatrolCar`
+
+and input all details for all vehicles and then display them.
+
+`Answer` [CampusVehicleManager.java](src/CampusVehicleManager.java)
+
+`Output Terminal`
+```
+--- [INPUT] ---
+ - Enter Vehicle Count: 3
+
+--- Vehicle 1/3 ---
+-- Select Vehicle Type --
+ - 0. Bus
+ - 1. Electric Cart
+ - 2. Patrol Car
+ - Choice: 0
+ - Vehicle ID: 1  
+ - Vehicle Name: Campus Bus 
+ - Max Speed: 80
+ - Seating Capacity: 40 
+
+--- Vehicle 2/3 ---
+-- Select Vehicle Type --
+ - 0. Bus
+ - 1. Electric Cart
+ - 2. Patrol Car
+ - Choice: 1
+ - Vehicle ID: 2
+ - Vehicle Name: Eco Cart
+ - Max Speed: 30
+ - Battery Capacity: 120
+
+--- Vehicle 3/3 ---
+-- Select Vehicle Type --
+ - 0. Bus
+ - 1. Electric Cart
+ - 2. Patrol Car
+ - Choice: 2
+ - Vehicle ID: 3
+ - Vehicle Name: Patrol Van
+ - Max Speed: 90
+ - Patrol Hours: 8 
+
+--- Vehicle Details ---
+ - ID:               1
+ - Name:             Campus Bus
+ - Max Speed:        80.0
+ - Maintenance Cost: 4000.0
+ - Capacity:         40
+
+--- Vehicle Details ---
+ - ID:               2
+ - Name:             Eco Cart
+ - Max Speed:        30.0
+ - Maintenance Cost: 6000.0
+ - Capacity:         120.0mAh
+
+--- Vehicle Details ---
+ - ID:               3
+ - Name:             Patrol Van
+ - Max Speed:        90.0
+ - Maintenance Cost: 600.0
+ - Patrol Time:      8.0 hours
+```
+
 ### Setup
 All Java programs in this repository were written and ran inside [Visual Studio Code](https://code.visualstudio.com/). 
 
