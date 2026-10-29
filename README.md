@@ -1923,6 +1923,7 @@ and input all details for all vehicles and then display them.
  - Max Speed: 90
  - Patrol Hours: 8 
 
+--- [OUTPUT] ---
 --- Vehicle Details ---
  - ID:               1
  - Name:             Campus Bus

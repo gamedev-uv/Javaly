@@ -158,6 +158,7 @@ class CampusVehicleManager
             }
         }
 
+        System.out.print("\n--- [OUTPUT] ---");
         for(int i = 0; i < vehicleCount; i++)
             vehicles.get(i).displayInfo();
     }
