@@ -76,6 +76,7 @@ Feel free to open up an issue if you are having any problems!
 |  62.     | University Manager            | [Link](#university-manager) |
 |  63.     | Vehicle Inheritance           | [Link](#vehicle-manager) |
 |  64.     | Person Student                | [Link](#person-to-student-inheritance) |
+|  65.     | Campus Vehicle Manager        | [Link](#campus-vehicle-manager) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
