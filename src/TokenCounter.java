@@ -22,10 +22,8 @@ class TokenCounter
 
     static boolean isVowel(char ch)
     {
-        for(int i = 0; i < 10; i++)
-            if(Vowels.charAt(i) == ch) return true;
-        
-        return false;
+
+        return vowels.indexOf(ch) != -1;
     }
 
     public static void main(String args[])

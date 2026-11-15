@@ -77,6 +77,10 @@ Feel free to open up an issue if you are having any problems!
 |  63.     | Vehicle Inheritance           | [Link](#vehicle-manager) |
 |  64.     | Person Student                | [Link](#person-to-student-inheritance) |
 |  65.     | Campus Vehicle Manager        | [Link](#campus-vehicle-manager) |
+|  66.     | Method Overloading            | [Link](#method-overloading) |
+|  67.     | Employee Polymorphism         | [Link](#employee-polymorphism) |
+|  68.     | Payment Interface             | [Link](#payment-interface) |
+|  69.     | Report Interface              | [Link](#report-interface) |
 
 ### Hello World
 WAP in Java to display Hello World to the output console.
@@ -1944,6 +1948,74 @@ and input all details for all vehicles and then display them.
  - Max Speed:        90.0
  - Maintenance Cost: 600.0
  - Patrol Time:      8.0 hours
+```
+
+### Method Overloading
+WAP in Java to create overloaded 
+- `add(int,int)`
+- `add(double,double)`
+- `add(int,int,int)` 
+methods to demonstrate compile-time polymorphism.
+
+`Answer` [MethodOverloading.java](src/MethodOverloading.java)
+
+`Output Terminal`
+```
+--- [OUTPUT] ---
+1 + 2 = 3
+1.5 + 2.5 = 4.0
+1 + 2 + 3 = 6
+```
+
+### Employee Polymorphism
+WAP in Java to create Employee, Manager, Developer, and Clerk. 
+Override `calculateSalary()` and demonstrate runtime polymorphism using Employee references.
+
+`Answer` [EmployeePoly.java](src/EmployeePoly.java)
+
+`Output Terminal`
+```
+--- [OUTPUT] ---
+100.0
+1000.0
+500.0
+```
+
+### Payment Interface
+WAP in Java to create `Payment` with `pay()` and `generateReceipt()`. 
+Implement `CashPayment`, `CardPayment`, and `UPIPayment`.
+
+`Answer` [PaymentInterface.java](src/PaymentInterface.java)
+
+`Output Terminal`
+```
+--- [OUTPUT] ---
+Payment done using Cash
+Amount: 100.0
+Payment done using Card
+Amount: 200.0
+Payment done using UPI
+Amount: 300.0
+```
+
+### Report Interface
+WAP in Java to create `Printable` and `Calculable` interfaces. 
+Implement both in `Report` to calculate total/average and print the report.
+
+`Answer` [ReportInterface.java](src/ReportInterface.java)
+
+`Output Terminal`
+```
+--- [INPUT] ---
+Enter Count: 3
+ - Value 1 : 3
+ - Value 2 : 12
+ - Value 3 : 4
+
+--- [OUTPUT] ---
+Report Summary for 3 Values
+Total: 19.0
+Average: 6.3333335
 ```
 
 ### Setup
